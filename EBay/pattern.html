@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+     
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <style type="text/css">
+
+        .navbar
+        {
+         z-index: 1000;
+         background-color: #03224C;
+         border-bottom: 2px solid black;
+       }
+
+       .navbar a:hover{
+        color: #27A644 !important;
+      }
+
+      .border-bottom {
+        border-bottom: 2px solid #28a745 !important;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+      .navbar-toggler {
+        border-color: rgb(255,255,255);
+      }
+
+      /* BEGINING Carousel : Make the image fully responsive */
+      .carousel-inner img{
+        width: 65%;
+        height: 65%;
+      }
+      /**END Carousel **/
+
+      h3 {
+        text-align: center;
+        text-decoration: underline;
+        color: #03224C;
+      }
+
+      .row a {
+        text-decoration: none;
+        color: #03224C;
+      }
+
+      .row a:hover {
+        text-decoration: underline;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #03224C;
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: 58px;
+      }
+
+      .sidenav a {
+        padding: 6px 8px 6px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        margin-left: -30px;
+      }
+
+      .sidenav ul {
+        list-style: none;
+      }
+
+      .sidenav a:hover {
+        color: #27A644;
+
+      }
+
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+
+      }
+
+    </style>
+        
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-success"> <!--navbar-light bg-dark border-success-->
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">ECE Ebay<span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Tresor / Feraille</a>
+                      <a class="dropdown-item" href="#">Bon pour le musee</a>
+                      <a class="dropdown-item" href="#">Accessoires VIP</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="pattern.html">Acceuil</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Mon Compte
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Se déconnecter</a>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+              </div>
+        </nav>
+
+        <div class="sidenav">
+          <ul>
+            <li><a href="#">Mon Profil</a></li>
+            
+            <ul> 
+              <li><a href="#">- Mes items en vente</a></li>
+              <li><a href="#">- Mes items vendus</a></li>
+            </ul>
+            
+            <li><a href="#">Vendre un item</a></li>
+          </ul>
+            
+        </div>
+
+  </body>
+</html>

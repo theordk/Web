@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+     <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+      
+        <style type="text/css">
+          .navbar
+        {
+           z-index: 1000;
+           background-color: #03224C;
+        }
+
+        .navbar a:hover{
+          color: #27A644 !important;
+        }
+
+        /* BEGINING Carousel : Make the image fully responsive */
+        .carousel-inner img{
+          width: 65%;
+          height: 65%;
+        }
+        /**END Carousel **/
+
+         .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+
+      .navbar-toggler {
+        border-color: rgb(255,255,255);
+      }
+
+
+        h3 {
+          text-align: center;
+          text-decoration: underline;
+          color: #03224C;
+          }
+
+          .row a {
+            text-decoration: none;
+            color: #03224C;
+          }
+
+          .row a:hover {
+            text-decoration: underline;
+          }
+
+          footer {
+            margin-top: 40px;
+            background-color: #03224C;
+          }
+
+        
+
+        </style>
+        
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-success"> 
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="testboot.html">EbayECE<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="connexion.html">Connexion<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="ferraille.php">Trésor / Ferraille
+                        <!--<input type="submit" name="button1" value="Ferraille">-->
+                      </a>
+                      <a class="dropdown-item" href="musee.php">Bon pour le musee
+                        <!--<input type="submit" name="button2" value="Bon pour le Musee">-->
+                      </a>
+                      <a class="dropdown-item" href="vip.php">Accessoires VIP
+                        <!--<input type="submit" name="button3" value="Luxe/VIP">-->
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="testboot.html">Acceuil</a>
+                    </div>
+                  </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+              </div>
+        </nav>
+
+        <br><br><br><br>
+        <h3>Selection de nos articles disponibles</h3>
+        <br>
+
+        <!-- Carousel -->    
+        <div id="demo" class="carousel slide container-fluid text-center" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="fer.jpg" alt="A">
+            </div>
+            <div class="carousel-item">
+              <img src="tab.jpg" alt="B">
+            </div>
+            <div class="carousel-item">
+              <img src="rolex.jpg" alt="C">
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+        </div>
+
+        <br><br><br>
+        <div class="col-sm-12">
+          <h3>Nos catégories d'items</h3>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4 class="text-center"><a href="ferraille.php">Trésor / Ferraille</a></h4>
+             <img src="4.jpg" class="img-thumbnail">
+             <div class="caption">Voici une selection de nos tous nouveaux articles en Trésor et Ferraille. Vous y trouverez des objets dénichés dans les vides-greniers, les brocantes ou des biens de familles.</div>
+           </div>
+           <div class="col-sm-4">
+            <h4 class="text-center"><a href="musee.php">Bon pour le musee</a></h4>
+            <img src="5.jpg" class="img-thumbnail">
+            <div class="caption">Dans cette rubriques, retrouvez les plus belles oeuvres dignes d'être affichees dans un musee. Peintures, tableaux, sculptures : vous y trouverez votre bonheur.</div>
+          </div>
+          <div class="col-sm-4">
+            <h4 class="text-center"><a href="vip.php">Accessoires VIP</a></h4>
+            <img src="6.jpg" class="img-thumbnail">
+            <div class="caption">Vous êtes un amoureux du luxe et des objets qui brillent ? Cette rubrique vous comblera. Ici, vous trouverez des objets plus beaux les uns que les autres. Attention, cette séléction est reservée à une élite VIP.</div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="page-footer">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 col-md-8 col-sm-12">
+                   <h6 class="text-uppercase font-weight-bold text-white">Information additionnelle</h6>
+                   <a class="text-white">Projet Piscine WebDynamique 2020 ECE Paris</a>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-12">
+                   <h6 class="text-uppercase font-weight-bold text-white">Contact</h6>
+                   <a class="text-white">+33 01 03 02 05 04</a>
+               </div>
+           </div>
+           <div class="footer-copyright text-center text-white">&copy; 2020 Copyright | Droit d'auteur: WebDynamique.ece.fr</div>
+       </footer>
+
+  </body>
+</html> 

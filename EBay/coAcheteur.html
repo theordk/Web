@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+
+<html>
+
+	<head>
+		<title>Acheteur</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="coPass.css">
+
+		<script>
+			function validateForm() {
+				var x = document.forms["myForm"]["mail"].value;
+				var y = document.forms["myForm"]["password"].value;
+				if (x == "" || x == null || y == "" || y == null) {
+					alert("Un des champs du formulaire mal rempli");
+					return false;
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		
+		<form action="coAcheteur.php" method="post" name="myForm" onsubmit="return validateForm()" required>
+			<h1>Connexion</h1>
+			<h3>Se connecter à mon compte Acheteur</h3>
+			<input placeholder="mail..." type="text" name="mail"> <br><br>
+			<input placeholder="password" type="password" name="password"> <br><br>
+			<input type="submit" name="button1" value="Se connecter">
+			<input type="button" value="Retour" onclick="javascript:history.back()">
+		</form>
+
+	</body>
+
+</html>

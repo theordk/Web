@@ -1,0 +1,39 @@
+h1 {
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+} 
+
+h3 {
+	text-align: center;
+	color: white;
+} 
+
+table {
+	background-color: #03224C;
+	margin: 100px auto;
+	font-family: Raleway;
+	padding: 40px;
+	width: 70%;
+	min-width: 300px;
+	border-radius: 10px; 
+	text-align: center;
+	margin-left: 150px;
+}
+
+form{
+	background-color: #03224C;
+	margin: 100px auto;
+	font-family: Raleway;
+	padding: 40px;
+	width: 70%;
+	min-width: 300px;
+	border-radius: 10px; 
+	text-align: center;
+	margin-left: 150px;
+}
+
+
+body{
+	background-color: rgb(112,145,170);
+}
