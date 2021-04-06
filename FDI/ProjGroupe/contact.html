@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+        
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+      
+        
+        
+        <style>
+        
+        body {
+          font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 20px;
+          margin-top: 58px;
+         }
+
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          font-family: 'Ubuntu', sans-serif;
+        }
+
+        .sidenav a:hover {
+            color: #27A644;
+        }
+            
+        .sidenav img{
+            margin-left: 20px; 
+            margin-top: 240px;
+            max-height: 100%;
+            max-width: 100%
+        }
+
+        .main {
+          margin-left: 160px; /* Same as the width of the sidenav */
+          font-size: 28px; /* Increased text to enable scrolling */
+          padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+            
+        .navbar
+        {
+           z-index: 1000;
+        }
+            
+        .navbar-light a:hover{
+          color: #27A644 !important;
+        }
+            
+        .border-bottom {
+                border-bottom: 2px solid #28a745 !important;
+        }
+            
+        .card-deck{
+            margin-top: 100px;
+            margin-left: 180px;
+            margin-right: 20px;
+        }
+            
+            .card-title{
+                text-align: center;
+            }
+            
+            .card-deck p{
+                text-align: justify;
+            }
+            
+            .btn-primary{
+                background-color: green;
+                border-color: green;
+            }
+            
+            .btn-primary:hover{
+                background-color: darkgreen;
+                border-color: darkgreen;
+            }
+            
+            .card-footer{
+                text-align: center;
+            }
+            
+            .card-body h5{
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            .card-body p{
+                font-family: "Lato", sans-serif;
+            }
+            
+            .fa {
+              padding: 5px;
+              font-size: 15px;
+              width: 25px;
+              text-align: center;
+              text-decoration: none;
+              border-radius: 3px;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+              background: #3B5998;
+              color: white;
+            }
+            
+            .fa-instagram {
+              background: rgb(209,63,116);
+              color: white;
+        
+        </style>
+        
+        
+    </head>
+     
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top border-bottom border-success">
+             
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="landingpage.html">Landing page<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="homepage.html">Homepage<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Informations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="Wireframe-KhaptaMusic.pdf" target="_blank">Wireframe</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/KhaptaMusic-107775857315421/?modal=admin_todo_tour" target="_blank">Facebook</a>
+                      <a class="dropdown-item" href="https://www.instagram.com/khaptamusic/?hl=fr" target="_blank">Instagram</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html">My Website</a>
+                    </div>
+                  </li>
+                </ul>
+                  
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                  
+              </div>
+        </nav> 
+        
+        <div class="sidenav bg-dark">
+            <a href ="my_account.html">My account</a>
+            <a href ="my_songs.html">My songs</a>
+            <a href ="my_playlists.html">My Playlists</a>
+            <a href ="events.html">Events</a>
+            <img src="img/logo2.png" alt="logo2" style="width:120px;">   
+        </div>
+        
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/TT.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Théophile</h5>
+              <p class="card-text">I'm a french student passionated by music, and I'm currently studying here in Mexico at Tec de Monterrey for 6 months.</p>
+            </div>
+            <div class="card-footer">
+                <a href = "tel:33781507172" class="btn btn-primary">Contact</a>
+                <br><br>
+                <b class="nav-item">
+                    <a href="https://www.facebook.com/theophile.tarbe" target="_blank"><b  class="fa fa-facebook"></b></a>
+                    <a href="https://www.instagram.com/theotarbe/?hl=fr" target="_blank"><b  class="fa fa-instagram"></b></a>
+                </b>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/toto.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Thomas</h5>
+              <p class="card-text">I'm an engineer in web development. I love techno music and even music in general. Thus I really care about this project.</p>
+            </div>
+            <div class="card-footer">
+              <a href = "tel:33698663353" class="btn btn-primary">Contact</a>
+                <br><br>
+                <b class="nav-item">
+                    <a href="https://www.facebook.com/thomas.lebrishoual" target="_blank"><b  class="fa fa-facebook"></b></a>
+                    <a href="https://www.instagram.com/toma.lb/?hl=fr" target="_blank"><b  class="fa fa-instagram"></b></a>
+                </b>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/rems.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Rémy</h5>
+              <p class="card-text">I'm twenty years old, and I'm from Toulouse. I would like do developp an application in relation with the environment.</p>
+            </div>
+            <div class="card-footer">
+              <a href = "tel:33782690191" class="btn btn-primary">Contact</a>
+                <br><br>
+                <b class="nav-item">
+                    <a href="https://www.facebook.com/remy.ghidaglia" target="_blank"><b  class="fa fa-facebook"></b></a>
+                    <a href="https://www.instagram.com/remyghidaglia/?hl=fr" target="_blank"><b  class="fa fa-instagram"></b></a>
+                </b>
+            </div>
+          </div>
+            <div class="card">
+            <img class="card-img-top" src="img/gucci.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Gauthier</h5>
+              <p class="card-text">I'm a young student who loves to code. This is my passion since I'm ten years old. I would love to change the world, but they do not want to provide me the source code.
+            </p>
+            </div>
+            <div class="card-footer">
+              <a href = "tel:33678564781" class="btn btn-primary">Contact</a>
+                <br><br>
+                <b class="nav-item">
+                    <a href="https://www.facebook.com/gauthier.bouchenoire" target="_blank"><b  class="fa fa-facebook"></b></a>
+                    <a href="https://www.instagram.com/gauthier_bcn/?hl=fr" target="_blank"><b  class="fa fa-instagram"></b></a>
+                </b>
+            </div>
+          </div>
+            <div class="card">
+            <img class="card-img-top" src="img/benzo.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Benoît</h5>
+              <p class="card-text">I enjoy working on new projects and I love helping others. This project is a very good occasion for me to developp my skills in html and css.</p>
+            </div>
+            <div class="card-footer">
+              <a href = "tel:33678660108" class="btn btn-primary">Contact</a>
+                <br><br>
+                <b class="nav-item">
+                    <a href="https://www.facebook.com/benoit.clemenceau.75" target="_blank"><b  class="fa fa-facebook"></b></a>
+                    <a href="https://www.instagram.com/benzinho__/?hl=fr" target="_blank"><b  class="fa fa-instagram"></b></a>
+                </b>
+            </div>
+          </div>
+        </div>
+
+    </body>
+    
+</html>

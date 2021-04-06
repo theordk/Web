@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+    
+    <title>Responsive CSS</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- setting the viewport -->
+    
+        <style>
+        
+            body{ /** styles desktop **/
+                
+                background: url(img/bg.jpg);
+                background-size: cover;
+                
+            }  /** end styles desktop **/
+        
+            @media only screen and (max-width: 768px){
+                
+                body {  /** styles mobile **/
+                    
+                    background: url(img/bgv.jpg);
+                    background-size: cover;      
+                    
+                } /** end styles mobile **/
+            }
+            
+            #img_logo{
+                
+                text-align: center;
+                margin-top: 100px;
+            }
+         
+        </style>
+    
+    </head>
+
+
+
+    <body>
+        
+        <div id="img_logo">
+    
+    <img src="img/logo.png">
+            
+            </div>
+    
+    </body>
+
+</html>

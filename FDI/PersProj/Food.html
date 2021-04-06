@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Clothes</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8"> <!-- Using special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Resseting my viewport for making my website responsive -->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: water; }
+            .item4 { grid-area: clothes; }
+            .item5 { grid-area: food; }
+            .item6 { grid-area: materials; }
+            .item7 { grid-area: informations; }
+
+            /**BEGINING links on the top **/
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu water clothes food materials informations';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;                
+            }
+            
+            .grid-container t{
+                font-size: 40px;
+                font-family: 'Lora', serif;
+            }
+            
+            .grid-container a{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .grid-container a:hover{
+              
+                text-decoration: none;
+                color: green;
+            } 
+            
+            .dropdown button{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .dropdown button:hover{
+                text-decoration: none;
+                color: green;
+            }
+            /**END links on the top **/
+            
+            /**BEGINING Bordure**/
+            hr{
+                margin-top: -10px;
+                width: 75%;
+                height: 1px;
+                background-color: black;
+                border: none; /*on supprime le style par défaut*/
+            }
+            /**END Bordure**/
+            
+            /**BEGINING Col**/
+            /**
+            .row p{
+                font-size: 20px;
+                text-align: justify;
+                color: black;
+                margin: 15px;
+                font-style: normal;
+                font-family: 'Nunito', serif;
+                
+            }
+            
+            .row h5{
+                font-family: 'Lora', serif;
+            }
+            
+            .row{
+                
+                margin-top: 30px;
+            }
+            **/
+            /**END Col**/
+            
+            #container{
+                margin: 30px;
+            }
+            
+            #container h5{
+                font-family: 'Lora', serif;
+                text-decoration: underline;
+            }
+            
+            #container p{
+                font-family: 'Nunito', serif;
+                text-align: justify;
+                color: black;
+                margin: 5px;
+            }
+          
+            .card-deck{
+                text-align: center;
+            }
+        
+            #container img{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+            .card{
+                border: 1px solid black;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <!-- Links on top -->
+    <div class="grid-container">
+      <div class="item1"><t>Recycling Every Day</t></div>
+      <div class="item2"><a href="Menu.html">Menu</a></div>
+      <div class="item3"><a href="Water.html">Water</a></div>  
+      <div class="item4"><a href="Clothes.html">Clothes</a></div>
+      <div class="item5"><a href="Food.html">Food</a></div>  
+      <div class="item6"><a href="Materials.html">Materials</a></div>
+      <div class="item7">
+        <div class="dropdown">
+            <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+              Informations
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Contact.html">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wirepersproj.pdf" target="_blank">Wireframe</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/19z7GCd6613FEoj6NN1TbArjXyxCQYZDqgKhElzO-iFE/edit?usp=sharing" target="_blank">Project Ideas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../index.html">My Website</a>
+            </div>
+        </div>
+      </div>  
+    </div>
+        
+    <hr> <!-- bordure -->
+        
+        <div id="container">
+            
+         <div class="card-deck">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h5>Compost</h5>
+                  <img src="img/food1.jpg">
+                <p class="card-text">According to the United States Environmental Protection Agency, almost 90% of garbage thrown away by households, cafeterias, and supermarkets is composed of recyclable food scrap.<br><br> Composting is one of the most undemanding and eco-friendly ways to recycle your food waste.You can either : use a common composting facility, place your compost pile in your backyard or even in an apartment, you can set up a compost bin indoors, enabling you to convert your food scraps into nutrient-rich compost.</p>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h5>Donate for animal feed</h5>
+                  <img src="img/food2.png">
+                <p class="card-text">The United Nations estimates that if farmers and livestock owners fed their animals on the legally-permissible food waste, enough grain would be liberated to feed an extra three billion people worldwide.<br><br> Look for avid gardeners, farmers, and livestock owners in your neighborhood or at a local market and check if you can donate waste food that they can be used as animal feed or for composting. Several recycling firms, namely Organix Recycling and Eco Food Recycling are coming up with swift and innovative ways to recycle waste fruits, vegetables, and bakery scrap from grocery stores and households to produce a nutritious animal feed.</p>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h5>Convert into biogas</h5>
+                  <img src="img/food3.jpg">
+                <p class="card-text">Over one-third of the food produced across the globe is either discarded or wasted. This food waste holds a huge untapped potential for generating energy, commonly referred to as waste-to-energy systems (WTE).<br><br> Biogas is a renewable and sustainable source of energy developed from organic matter such as waste residues of vegetables and fruits. Researchers have found an innovative way to capture all the energy trapped in the organic food waste, leaving behind very little waste for landfills and oceans. In this process, the waste is incinerated to produce a crude liquid that can be converted into biofuel. The residue is then treated to produce methane, that can be used as a source of electricity and heat.</p>
+              </div>
+            </div>
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h5>Reuse the packaging material</h5>
+                  <img src="img/food4.jpg">
+                <p class="card-text">According to the Environmental Protection Agency, food containers alone contribute to more than 23 percent of the total material reaching the landfills in the United States.<br><br> Though getting rid of packaging material isn’t feasible for all kinds of food items, reusing or recycling strategies can divert them from the landfills, considerably reducing the toxic emissions.<br><br>The food packaging material, namely wrappers, cartons, and containers can be sent to recycling firms in order to produce useful paper products, namely corrugated cardboard, egg trays, magazines, and newspapers.</p>
+              </div>
+            </div>  
+        </div>
+        
+        
+        </div>
+ 
+
+    </body>
+    
+</html>

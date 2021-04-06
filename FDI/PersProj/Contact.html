@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Contact</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8"> <!-- Using special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Resseting my viewport for making my website responsive -->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: water; }
+            .item4 { grid-area: clothes; }
+            .item5 { grid-area: food; }
+            .item6 { grid-area: materials; }
+            .item7 { grid-area: informations; }
+
+            /**BEGINING links on the top **/
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu water clothes food materials informations';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;                
+            }
+            
+            .grid-container t{
+                font-size: 40px;
+                font-family: 'Lora', serif;
+            }
+            
+            .grid-container a{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .grid-container a:hover{
+              
+                text-decoration: none;
+                color: green;
+            } 
+            
+            .dropdown button{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .dropdown button:hover{
+                text-decoration: none;
+                color: green;
+            }
+            /**END links on the top **/
+            
+            /**BEGINING Bordure**/
+            hr{
+                margin-top: -10px;
+                width: 75%;
+                height: 1px;
+                background-color: black;
+                border: none; /*on supprime le style par défaut*/
+            }
+            /**END Bordure**/
+            
+            .card-title{
+                text-align: center;
+                font-family: 'Lora', serif;
+            }
+            
+            .card-text{
+                text-align: justify;
+                font-family: 'Nunito', sans-serif;
+            }
+            
+            a.btn{
+                
+                margin-top: 5px;
+            }
+            
+            .btn-primary{
+                background-color: green;
+                border-color: green;
+            }
+            
+            .btn-primary:hover{
+                background-color: darkgreen;
+                border-color: darkgreen;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <!-- Links on top -->
+    <div class="grid-container">
+      <div class="item1"><t>Recycling Every Day</t></div>
+      <div class="item2"><a href="Menu.html">Menu</a></div>
+      <div class="item3"><a href="Water.html">Water</a></div>  
+      <div class="item4"><a href="Clothes.html">Clothes</a></div>
+      <div class="item5"><a href="Food.html">Food</a></div>  
+      <div class="item6"><a href="Materials.html">Materials</a></div>
+      <div class="item7">
+        <div class="dropdown">
+            <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+              Informations
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Contact.html">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wirepersproj.pdf" target="_blank">Wireframe</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/19z7GCd6613FEoj6NN1TbArjXyxCQYZDqgKhElzO-iFE/edit?usp=sharing" target="_blank">Project Ideas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../index.html">My Website</a>
+            </div>
+        </div>
+      </div>  
+    </div>
+        
+    <hr> <!-- bordure -->
+
+    <div class="mx-auto" style="width: 400px">
+      <div class="card text-center" style="width:400px">
+        <img class="card-img-top" src="img/contact2.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Théophile Tarbé</h4>
+          <p class="card-text">I'm a student in the ingeneering school ECE Paris. Currently, I'm doing a smester in Queretaro for my studies, and I'am learning how to code websites. Here are my contact informations :</p>            
+          <a href="https://www.linkedin.com/in/théophile-tarbé-15b795170/" class="btn btn-primary">Linkedin</a>
+            <br/>
+          <a href = "tel:33781507172" class="btn btn-primary">Mobile Phone</a>
+		    <br/>
+          <a href="mailto:theophile.tarbe@hotmail.fr ? Subject:Bonjour" class="btn btn-primary">Email</a>
+        </div>
+      </div>
+    </div>    
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+ 
+
+
+
+

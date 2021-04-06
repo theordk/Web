@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+        
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+        
+        
+        <style>
+        
+        body {
+          font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 20px;
+          margin-top: 58px;
+         }
+
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          font-family: 'Ubuntu', sans-serif;
+        }
+
+        .sidenav a:hover {
+            color: #27A644;
+        }
+            
+        .sidenav img{
+            margin-left: 20px; 
+            margin-top: 240px;
+            max-height: 100%;
+            max-width: 100%
+        }
+
+        .main {
+          margin-left: 160px; /* Same as the width of the sidenav */
+          font-size: 28px; /* Increased text to enable scrolling */
+          padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+            
+        .navbar
+        {
+           z-index: 1000;
+        }
+            
+        .navbar-light a:hover{
+          color: #27A644 !important;
+        }
+            
+        .border-bottom {
+                border-bottom: 2px solid #28a745 !important;
+            }
+            
+            #list
+            {
+                text-align: center;
+                margin-top: 100px;
+                margin-left: 190px;
+                margin-right: 40px;;
+  
+            }
+
+            .list-group-item
+            {
+                 width:90%;
+               margin-left: 15px;
+            }
+            
+            .list-group-item h2{
+                font-family: 'Ubuntu', sans-serif;
+            }
+        
+        </style>
+        
+        
+    </head>
+     
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top border-bottom border-success">
+             
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="landingpage.html">Landing page<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="homepage.html">Homepage<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Informations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="Wireframe-KhaptaMusic.pdf" target="_blank">Wireframe</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/KhaptaMusic-107775857315421/?modal=admin_todo_tour" target="_blank">Facebook</a>
+                      <a class="dropdown-item" href="https://www.instagram.com/khaptamusic/?hl=fr" target="_blank">Instagram</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html">My Website</a>
+                    </div>
+                  </li>
+                </ul>
+                  
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                  
+              </div>
+        </nav> 
+        
+        <div class="sidenav bg-dark">
+            <a href ="my_account.html">My account</a>
+            <a href ="my_songs.html">My songs</a>
+            <a href ="my_playlists.html">My Playlists</a>
+            <a href ="events.html">Events</a>
+            <img src="img/logo2.png" alt="logo2" style="width:120px;">   
+        </div>
+        
+                <div id ="list">        
+        <div class="container1">
+        <ul class="list-group list-group-horizontal" >
+
+        <li class="list-group-item">
+            <h2>Playlist</h2>
+            <div class="container">
+                <div class="list-group">
+                
+                    <a href="https://www.youtube.com/watch?v=D1lNQHuZcHo&t=1012s" class="list-group-item list-group-item-action" target="_blank">Funk & Disco !</a>
+                    <a href="https://www.youtube.com/watch?v=3y6IpeluL_w" class="list-group-item list-group-item-action" target="_blank">Sex</a>
+                    <a href="https://www.youtube.com/watch?v=Khd-uyOuhGo" class="list-group-item list-group-item-action" target="_blank">Lo-Fi House</a>
+                    <a href="https://www.youtube.com/watch?v=jrTMMG0zJyI" class="list-group-item list-group-item-action" target="_blank">Japanese Lofi HipHop</a>
+                    <a href="https://www.youtube.com/watch?v=X1vfwIm_JeA" class="list-group-item list-group-item-action" target="_blank">Reggaeton</a>
+                    <a href="https://www.youtube.com/watch?v=7xN8RlFcEQ8" class="list-group-item list-group-item-action" target="_blank">Funky Groove Jackin' House By Cole</a>
+                    <a href="https://www.youtube.com/watch?v=kXh4hoYFlFw&list=PL39z-AAkkatucrktuQmIKjAj_4wVAa-ru" class="list-group-item list-group-item-action" target="_blank">Acid Techno</a>
+                    <a href="https://www.youtube.com/watch?v=Kt-tLuszKBA" class="list-group-item list-group-item-action" target="_blank">Guardians of the Galaxy Awesome Mix Vol 1 Vol 2 </a>
+
+
+                </div> 
+            </div>
+        </li>
+
+
+        <li class="list-group-item">
+            <h2>Songs</h2>
+            <div class="container">
+                <div class="list-group">
+                    
+                    <a href="https://www.youtube.com/watch?v=ccWqeKHb384" class="list-group-item list-group-item-action" target="_blank">Purple Disco Machine - Body Funk</a>
+                    <a href="https://www.youtube.com/watch?v=FcQvsQstZEA" class="list-group-item list-group-item-action" target="_blank">Purple Disco Machine - Emotion</a>
+                    <a href="https://www.youtube.com/watch?v=FVkCwp8z2SU" class="list-group-item list-group-item-action" target="_blank">Folamour - When She Moves, I’m Moved</a>
+                    <a href="https://www.youtube.com/watch?v=Rep0EHAjplw" class="list-group-item list-group-item-action" target="_blank">Folamour - Ya Just Need 2 Believe in Yaself</a>
+                    <a href="https://www.youtube.com/watch?v=JqUPDAFPqxk" class="list-group-item list-group-item-action" target="_blank">Guts - Kenke Corner (Official Audio)</a>
+                    <a href="https://www.youtube.com/watch?v=cm2vvGWvxgM" class="list-group-item list-group-item-action" target="_blank">France Gall - Ella Elle L'a (Folamour Edit)</a>
+                    <a href="https://www.youtube.com/watch?v=l-vSl7BuxGs" class="list-group-item list-group-item-action" target="_blank">Amelie Lens - Drift</a>
+                    <a href="https://www.youtube.com/watch?v=J1SWn2IGOV4" class="list-group-item list-group-item-action" target="_blank">Demuja - Do You Want My Love</a>
+                    <a href="https://www.youtube.com/watch?v=EWwRimC3jS0" class="list-group-item list-group-item-action" target="_blank">Bellaire - Some Jazz To Make Love On [AOC001 Vinyl Exclusive]</a>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="list-group-item">
+            <h2>Events</h2>
+            <div class="container">
+                <div class="list-group">
+                    <a href="https://www.facebook.com/events/1570317683110508/?__mref=mb" class="list-group-item list-group-item-action" target="_blank">BaMBaaTeros de corazón by BaMBaaTa Qro</a>
+                    <a href="https://www.facebook.com/events/416905102532096/?__mref=mb" class="list-group-item list-group-item-action" target="_blank">Tour oficial "The Social Festival" desde Querétaro</a>
+                    <a href="https://www.facebook.com/events/1138336729709202/?__mref=mb" class="list-group-item list-group-item-action" target="_blank">Click I Click [Bar 25 / Berlin]</a>
+                    
+                </div>
+            </div>
+        </li>
+
+
+        </ul>
+        </div>
+            </div>
+
+    </body>
+    
+</html>

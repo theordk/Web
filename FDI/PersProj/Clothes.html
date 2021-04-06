@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Food</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8"> <!-- Using special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Resseting my viewport for making my website responsive -->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: water; }
+            .item4 { grid-area: clothes; }
+            .item5 { grid-area: food; }
+            .item6 { grid-area: materials; }
+            .item7 { grid-area: informations; }
+
+            /**BEGINING links on the top **/
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu water clothes food materials informations';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;                
+            }
+            
+            .grid-container t{
+                font-size: 40px;
+                font-family: 'Lora', serif;
+            }
+            
+            .grid-container a{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .grid-container a:hover{
+              
+                text-decoration: none;
+                color: green;
+            } 
+            
+            .dropdown button{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .dropdown button:hover{
+                text-decoration: none;
+                color: green;
+            }
+            /**END links on the top **/
+            
+            /**BEGINING Bordure**/
+            hr{
+                margin-top: -10px;
+                width: 75%;
+                height: 1px;
+                background-color: black;
+                border: none; /*on supprime le style par défaut*/
+            }
+            /**END Bordure**/
+        
+            .content{
+                margin-top: 200px;
+            }
+            
+            .row{
+                margin: 20px;
+                background-color: rgb(244,245,246);
+            }
+            
+            .row p{
+                font-size: 20px;
+                text-align: justify;
+                color: black;
+                margin: 5px;
+                font-family: 'Nunito', sans-serif;
+                
+            }
+            
+            .row h5{
+                font-family: 'Lora', serif;
+                text-decoration: underline;
+            }   
+            
+            .col img{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <!-- Links on top -->
+    <div class="grid-container">
+      <div class="item1"><t>Recycling Every Day</t></div>
+      <div class="item2"><a href="Menu.html">Menu</a></div>
+      <div class="item3"><a href="Water.html">Water</a></div>  
+      <div class="item4"><a href="Clothes.html">Clothes</a></div>
+      <div class="item5"><a href="Food.html">Food</a></div>  
+      <div class="item6"><a href="Materials.html">Materials</a></div>
+      <div class="item7">
+        <div class="dropdown">
+            <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+              Informations
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Contact.html">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wirepersproj.pdf" target="_blank">Wireframe</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/19z7GCd6613FEoj6NN1TbArjXyxCQYZDqgKhElzO-iFE/edit?usp=sharing" target="_blank">Project Ideas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../index.html">My Website</a>
+            </div>
+        </div>
+      </div>  
+    </div>
+        
+    <hr> <!-- bordure -->
+    
+        <div classe="content" style="text-align: center; margin-top: 30px">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3DdU7c66E9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+       
+        <div class="row text-center" style="text-align: center; margin-top: 30px">
+            <div class="col"><h5>Tip 1 : Resale</h5> 
+                <div class="container-fluid"><img src="img/vetement3.jpg" class="center-block" alt=""></div>
+                    <ul>
+                    <li><p>By yourself</p></li>
+                        <p>Many websites like Ebay, Le Bon Coin or Vinted allow you to sell your clothes online, choosing your prices.</p>
+                        <br>
+                    <li><p>Through a third party</p></li>
+                        <p>Opt for the deposit-sale. The concept: we put his clothes in a thrift store that sells them for us and gives us some of the money collected.</p>
+                    </ul>
+            </div>
+            <div class="col"><h5>Tip 2 : Give</h5> 
+                <div class="container-fluid"><img src="img/vetement4.jpg" class="center-block" alt=""></div>
+                <p>Why not give clothes that we no longer wear instead of letting them mope at the bottom of our closets ? You can give them to your friends, family, or to associations that badly need it like Emmaüs, La Croix Rouge or Le Secours Populaire. You can also moving towards re-use structures such as recycling. </p>
+            </div>
+            <div class="col"><h5>Tip 3 : Barter</h5>
+                <div class="container-fluid"><img src="img/vet5.jpg" class="center-block" alt=""></div>
+                <p>You gather in someone's house without forgetting to bring all the clothes that are no longer worn and we come back with those whose loved ones no longer want. Ideally, each one presents a garment still in good condition that he or she wishes to give and the one who covets it is manifested. If several people are interested, each one tries it and the one to whom the garment goes best wins (one can also decide on other rules!). So on until all the clothes have been exchanged.</p>
+            </div>
+        </div>
+        
+    </body>
+    
+</html>

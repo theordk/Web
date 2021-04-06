@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+        
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+        
+        
+        <style>
+        
+        body {
+          font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 160px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          padding-top: 20px;
+          margin-top: 58px;
+         }
+
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          font-family: 'Ubuntu', sans-serif;
+        }
+
+        .sidenav a:hover {
+            color: #27A644;
+        }
+            
+        .sidenav img{
+            margin-left: 20px; 
+            margin-top: 240px;
+            max-height: 100%;
+            max-width: 100%
+        }
+
+        .main {
+          margin-left: 160px; /* Same as the width of the sidenav */
+          font-size: 28px; /* Increased text to enable scrolling */
+          padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+            
+        .navbar
+        {
+           z-index: 1000;
+        }
+            
+        .navbar-light a:hover{
+          color: #27A644 !important;
+        }
+            
+        .border-bottom {
+                border-bottom: 2px solid #28a745 !important;
+            }
+
+            #list
+            {
+                margin-top: 50px;
+                padding-left: 180px;
+                margin-top: 100px;
+                margin-left: 100px;  
+  
+            }
+
+            #list h2
+            {
+              color: white;
+              text-align: center;
+            }
+
+            .list-group-item
+            {
+              text-align: center;
+                 width:90%;
+                 padding-left: 80px;
+               /** padding-right: 80px;**/
+
+            }
+            
+            .list-group-item h2
+            {
+                font-family: 'Ubuntu', sans-serif;
+              margin-left: -40px;
+
+            }
+
+            .colorgreen
+            {
+              background-color: #2E7043;
+            }
+        
+        </style>
+        
+        
+    </head>
+     
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top border-bottom border-success">
+             
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="landingpage.html">Landing page<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-white" href="homepage.html">Homepage<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Informations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="Wireframe-KhaptaMusic.pdf" target="_blank">Wireframe</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/KhaptaMusic-107775857315421/?modal=admin_todo_tour" target="_blank">Facebook</a>
+                      <a class="dropdown-item" href="https://www.instagram.com/khaptamusic/?hl=fr" target="_blank">Instagram</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="../index.html">My Website</a>
+                    </div>
+                  </li>
+                </ul>
+                  
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                  
+              </div>
+        </nav> 
+        
+        <div class="sidenav bg-dark">
+            <a href ="my_account.html">My account</a>
+            <a href ="my_songs.html">My songs</a>
+            <a href ="my_playlists.html">My Playlists</a>
+            <a href ="events.html">Events</a>
+            <img src="img/logo2.png" alt="logo2" style="width:120px;">   
+        </div>
+        
+            <div id ="list">        
+            <div class="container1">
+            <ul class="list-group" >
+
+            <li class="list-group-item bg-dark pb-5">
+                <h2>Shared</h2>
+                <div class="container">
+                    <div class="list-group" id="list1">
+                        <a href="paypal1.html" class="list-group-item list-group-item-action">EXODUS X RAZANCE II</a>
+                        <a href="paypal2.html" class="list-group-item list-group-item-action">FEE CRO ANNIVERSARY 5</a>
+                        <a href="paypal3.html" class="list-group-item list-group-item-action">RAP FEST</a> 
+                        <a href="#" class="list-group-item list-group-item-action">SIRILO DJ TRACKNARD ALL NIGHT LONG</a>
+                        <a href="#" class="list-group-item list-group-item-action">BASIS SOUND LAB DJ ARNE LII</a>
+
+
+                    </div> 
+                </div>
+            </li>
+
+                <br>
+                <br>
+
+            <li class="list-group-item colorgreen pb-5">
+                <h2>Interested in</h2>
+                <div class="container">
+                    <div class="list-group">
+                        <a href="paypal1.html" class="list-group-item list-group-item-action">EXODUS X RAZANCE II</a>
+                        <a href="paypal2.html" class="list-group-item list-group-item-action">FEE CRO ANNIVERSARY 5</a>
+                        <a href="paypal5.html" class="list-group-item list-group-item-action">DISCO PARTY 70-80 II</a>
+                        <a href="paypal4.html" class="list-group-item list-group-item-action">RAP FEST</a>
+                        <a href="paypal3.html" class="list-group-item list-group-item-action">THE SOCIAL FESTIVAL</a>
+
+
+                    </div>
+                </div>
+            </li>
+                </ul>
+                </div>
+                    </div>
+    
+    </body>
+    
+</html>

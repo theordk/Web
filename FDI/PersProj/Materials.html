@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Materials</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8"> <!-- Using special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Resseting my viewport for making my website responsive -->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: water; }
+            .item4 { grid-area: clothes; }
+            .item5 { grid-area: food; }
+            .item6 { grid-area: materials; }
+            .item7 { grid-area: informations; }
+
+            /**BEGINING links on the top **/
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu water clothes food materials informations';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;                
+            }
+            
+            .grid-container t{
+                font-size: 40px;
+                font-family: 'Lora', serif;
+            }
+            
+            .grid-container a{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .grid-container a:hover{
+              
+                text-decoration: none;
+                color: green;
+            } 
+            
+            .dropdown button{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .dropdown button:hover{
+                text-decoration: none;
+                color: green;
+            }
+            /**END links on the top **/
+            
+            /**BEGINING Bordure**/
+            hr{
+                margin-top: -10px;
+                width: 75%;
+                height: 1px;
+                background-color: black;
+                border: none; /*on supprime le style par défaut*/
+            }
+            /**END Bordure**/
+            
+            .table{
+                margin-top: 30px; 
+            }
+            
+            .table th{
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .table td{
+                text-align: justify;
+            }
+            
+            .bulle img{
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .bulle{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <!-- Links on top -->
+    <div class="grid-container">
+      <div class="item1"><t>Recycling Every Day</t></div>
+      <div class="item2"><a href="Menu.html">Menu</a></div>
+      <div class="item3"><a href="Water.html">Water</a></div>  
+      <div class="item4"><a href="Clothes.html">Clothes</a></div>
+      <div class="item5"><a href="Food.html">Food</a></div>  
+      <div class="item6"><a href="Materials.html">Materials</a></div>
+      <div class="item7">
+        <div class="dropdown">
+            <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+              Informations
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Contact.html">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wirepersproj.pdf" target="_blank">Wireframe</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/19z7GCd6613FEoj6NN1TbArjXyxCQYZDqgKhElzO-iFE/edit?usp=sharing" target="_blank">Project Ideas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../index.html">My Website</a>
+            </div>
+        </div>
+      </div>  
+    </div>
+        
+    <hr> <!-- bordure -->
+
+        <div class="bulle">
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">How to reuse it ?</th>
+      <th scope="col">What could it give ?</th>
+      <th scope="col">Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Paper</th>
+      <td>A very simple way to recycle paper is to sort it out when you throw it away. Sorting belongs to the recycling process "at the source". It is a gesture and a civic duty.</td>
+      <td>A brand new paper with at least 50% fiber from printed (post-consumer) paper waste.Recycled paper is most often used in the manufacture of newsprint, corrugated paper, flat cardboard and hygiene papers.</td>
+      <td style="text-align: center"><img src="img/mat4.jpg"></td>
+    </tr>
+    <tr>
+      <th scope="row">Cardbaord</th>
+      <td>In the same way as paper, the cardboard is also sorted "at the source", when it is thrown away.</td>
+      <td>Recycling cardboard makes it possible to create new cardboards, new packaging such as for eggs or constructions like seats</td>
+      <td style="text-align: center"><img src="img/mat5.png"></td>
+    </tr>
+    <tr>
+      <th scope="row">Wood</th>
+      <td>Here again, we must take the initiative to go to dump to sort all the wood you no longer need. This wood will then be fully reused.</td>
+      <td>Recycled wood is used in many areas: for decoration, to build pallets, tables, furniture and many other utilities</td>
+      <td style="text-align: center"><img src="img/mat2.png"></td>
+    </tr>
+      <tr>
+      <th scope="row">Plastic</th>
+      <td>As a citizen, you must also sort your plastic at home in a trash for this purpose. It will then be sorted again for reuse.</td>
+      <td>The recycling of my plastic packaging makes it possible to manufacture many objects of everyday life. For example, bottles and clear plastic bottles (like my water bottles) once recycled become once again the textile fiber used to stuff duvets, sleeping bags, and even soft toys. You can also make supermarket baskets, or just new plastic bottles and flasks. The reuse of plastic is very varied.</td>
+      <td style="text-align: center"><img src="img/mat3.jpg"></td>
+    </tr>
+      <tr>
+      <th scope="row">Rubber</th>
+      <td>To recycle your rubber, you can choose to donate it to places such as your local recycling facility or a tire retailer.</td>
+      <td>There are just a handful of the amazing uses for recycled tire material such as : gravel substitute, crumb rubber, landfill medium, wastewater treatment filters, garden mulch or even belts !</td>
+      <td style="text-align: center"><img src="img/mat1.png"></td>
+    </tr>
+      <tr>
+      <th scope="row">Glass</th>
+      <td>By putting the used packaging glasses in the bins or glass containers, we are assured that it will be recycled 100%, and to infinity. Attention: only glass packaging can be recycled, ie bottles, jars, jars, and flasks. It's very simple and you find some everywhere in the street next to your home.</td>
+      <td>By recycling glass, we reduce greenhouse gases. Then, we save not only the raw material, but also the energy, because the transformation of the cullet in demand less than to treat the raw material. In addition, since glass can replace sand in many applications, its reuse also reduces the demand for sand, which is a non-renewable resource destined to disappear.</td>
+      <td style="text-align: center"><img src="img/mat6.png"></td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        
+    </body>
+    
+</html>

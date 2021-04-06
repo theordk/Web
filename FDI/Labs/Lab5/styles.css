@@ -1,0 +1,139 @@
+body {
+    
+    background-image: url(img/bg.jpg);
+    background-repeat: repeat; /** even without this line it il do it automatically, but you can specify x or y if you want **/
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;  
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+}
+
+#wrapper{
+    
+    background-color: #ffffff;
+    width : 960px; /** size for a wrapper **/
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#header{
+    
+    background-color: beige;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+#header ul{
+    
+    text-align: center; 
+    margin-left: -25px;  /** to make it aligned perfectly : **/
+    
+}
+
+#header ul li{
+    
+    display: inline; /** because the bullets are still there so we can remove them **/
+    
+}
+
+#header h1{
+    
+    text-align: center;
+}
+
+#header a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+#content_ing1{
+    
+    text-align: center;
+}
+
+#content_ing1 img{
+    
+    width: 900px;
+    height: 500px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#content_ing2 img{
+    
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#content_ing2{
+    
+    text-align: center;
+}
+
+#content_ing3 img{
+    
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#content_ing3{
+    
+    text-align: center;
+}
+
+.left{
+    
+    float: left;
+}
+
+.right{
+    
+    float: right;
+}
+
+#content_steps div{
+    
+    clear: both;
+}
+
+#content_steps img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.rr p{
+    
+   padding-top: 35px;
+    margin-right: 125px;
+}
+
+.rr{
+    
+    text-align: right;
+}
+
+.ll{
+    
+    text-align: left;
+}
+
+.ll p{
+    
+    padding-top: 35px;
+    margin-left: 120px;
+}
+
+#center{
+    text-align: center;
+}

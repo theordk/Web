@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Water</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap" rel="stylesheet">
+        <meta charset="utf-8"> <!-- Using special characters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Resseting my viewport for making my website responsive -->
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <style>
+        
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: water; }
+            .item4 { grid-area: clothes; }
+            .item5 { grid-area: food; }
+            .item6 { grid-area: materials; }
+            .item7 { grid-area: informations; }
+
+            /**BEGINING links on the top **/
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu water clothes food materials informations';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;                
+            }
+            
+            .grid-container t{
+                font-size: 40px;
+                font-family: 'Lora', serif;
+            }
+            
+            .grid-container a{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .grid-container a:hover{
+              
+                text-decoration: none;
+                color: green;
+            } 
+            
+            .dropdown button{
+                text-decoration: none;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Nunito', sans-serif;
+                color: black;
+            }
+            
+            .dropdown button:hover{
+                text-decoration: none;
+                color: green;
+            }
+            /**END links on the top **/
+            
+            /**BEGINING Bordure**/
+            hr{
+                margin-top: -10px;
+                width: 75%;
+                height: 1px;
+                background-color: black;
+                border: none; /*on supprime le style par défaut*/
+            }
+            /**END Bordure**/
+            
+            /**BEGINING Nav**/
+            body {
+                position: relative; 
+            }
+            
+            
+            .navbar{
+                margin-top: 20px;
+                padding-left: 50px;
+            }
+            
+            #bulle{
+                margin: 30px;
+            }
+            
+            
+            .container-fluid{
+                border-radius: 20px;
+                margin-top: 30px;
+                border: 1px solid black;
+            }
+            
+            .container-fluid img{
+                margin-bottom: 20px;
+            }
+            
+            .container-fluid p{
+                font-family: 'Nunito', sans-serif;
+            }
+            
+            .container-fluid h4{
+                font-family: 'Lora', serif;
+            }
+            
+            
+            .navbar{
+                
+            }
+            
+            .bulle{
+                padding-left: 500px;
+                padding-right: 500px;
+            }
+            
+           .ml-1 {
+                margin-left: ($spacer-x * .25) !important;
+            }
+            /**
+            .nav-link{
+                text-decoration-color: white;
+            
+            i{
+                float: right;
+               
+                margin-right: 40px;
+                margin-left: 40px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .nav-tabs{
+                margin-left: 450px;
+                margin-right: 450px;
+                display: inline-flex;
+            }
+            END Img**/
+            
+            .image {
+                
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: -10px;
+                }
+        
+        </style>
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!-- Links on top -->
+    <div class="grid-container">
+      <div class="item1"><t>Recycling Every Day</t></div>
+      <div class="item2"><a href="Menu.html">Menu</a></div>
+      <div class="item3"><a href="Water.html">Water</a></div>  
+      <div class="item4"><a href="Clothes.html">Clothes</a></div>
+      <div class="item5"><a href="Food.html">Food</a></div>  
+      <div class="item6"><a href="Materials.html">Materials</a></div>
+      <div class="item7">
+        <div class="dropdown">
+            <button type="button" class="btn btn-basic dropdown-toggle" data-toggle="dropdown">
+              Informations
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="Contact.html">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="wirepersproj.pdf" target="_blank">Wireframe</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://docs.google.com/document/d/19z7GCd6613FEoj6NN1TbArjXyxCQYZDqgKhElzO-iFE/edit?usp=sharing" target="_blank">Project Ideas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../index.html">My Website</a>
+            </div>
+        </div>
+      </div>  
+    </div>
+        
+    <hr> <!-- bordure -->
+        
+        <!--
+        <div class="bulle">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">  
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">Section 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Section 3</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Section 4</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#section41">Link 1</a>
+                <a class="dropdown-item" href="#section42">Link 2</a>
+              </div>
+        </li>
+      </ul>
+    </nav>
+            </div>-->
+    <div class="mx-auto" style="width: 450px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            
+          <a class="navbar-brand" href="#section1">Introduction</a>
+            
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#section2">Shower</a>
+              <a class="nav-item nav-link" href="#section3">Garden</a>
+              <a class="nav-item nav-link" href="#section4">Toilets</a>
+              <a class="nav-item nav-link" href="#section5">Dishes</a>
+            </div>
+          </div>
+                
+        </nav>
+    </div>
+     
+    <div id="bulle">
+        
+        <div id="section1" class="container-fluid bg-light" style="padding-top:20px;padding-bottom:10px">
+            <h4>Introduction</h4>
+            <p>Water consumption is increasing every year around the world, endangering future generations. Over time, excessive consumption may lead to shortages, unbalance aquatic ecosystems, and significantly increase water treatment costs as municipalities will have to invest in larger plants. That's why we need to scale up to better manage our daily water use. Here are a few tips to regulate your water consumption</p>
+            <div class="image">
+        <img src="img/eau1.jpg">
+        </div>
+        </div>
+        
+        
+    <div id="section2" class="container-fluid bg-light" style="padding-top:20px;padding-bottom:10px">
+      <h4>Shower and faucet water</h4>
+      <p>Showers and baths make up another third of our water consumption. Staying in the shower for 10 minutes equals 150 liters of water. The solution ? Opt for an economic knob, because the flow of water goes from 15 to 6 liters per minute.</p>
+      <p>At the sink, it is also possible to make some savings: remember to turn off the tap when brushing your teeth. Gain: between 5 and 8 liters with each brushing!</p>
+        <div class="image">
+        <img src="img/eau2.png">
+        </div>
+    </div>
+        
+    <div id="section3" class="container-fluid bg-light" style="padding-top:20px;padding-bottom:10px">
+      <h4>Water your garden effectively</h4>
+      <p>For watering without turning your garden into a desert area. To reduce evaporation, it is better to water in the evening rather than in the morning, and especially not in full sun.</p>
+      <p>Do not mow your lawn too much (6 cm maximum), the tall grass keeps moisture better. And if you can, recover and reuse the rainwater.</p>
+        <div class="image">
+        <img src="img/eau3.jpg">
+        </div>
+    </div>
+        
+    <div id="section4" class="container-fluid bg-light" style="padding-top:20px;padding-bottom:10px">
+      <h4>Your toilets</h4>
+      <p>Flushing represents more than a third of our total water consumption. A flush uses 6 to 12 liters of water for each use, which represents between 3,500 and 3,800 liters of water per year per person!</p>
+      <p>A simple way to get around this problem is to slide a 1.5 liter water bottle into your toilet's water tank so that it occupies the extra space. This action saves 3000 liters of water per year per person.</p>
+        <div class="image">
+        <img src="img/eau4.png">
+        </div>
+    </div>
+        
+    <div id="section5" class="container-fluid bg-light" style="padding-top:20px;padding-bottom:10px">
+      <h4>The dishes</h4>
+      <p>The water used for the dishwasher is 13% of the annual consumption of a household. This is a significant figure that can be reduced very simply.</p>
+      <p>The water consumption of a dishwasher varies from 10 to 20 liters per wash. By doing your dishes by hand, you can divide by 10 to 20 times your consumption. Indeed, it is possible to realize a complete dishes with 1 to 2 liters paying attention to your flow of water.</p>
+        <div class="image">
+        <img src="img/eau5.jpg">
+        </div>
+    </div> 
+        
+    </div>
+    
+
+    </body>
+    
+</html>
